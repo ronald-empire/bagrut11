@@ -32,11 +32,12 @@ class Lesson3_Task2 {
             System.out.println("second number is bigger");
         }
         if (num1 == num2) {
-            System.out.println("nmubers are equal");
+            System.out.println("numbers are equal");
         }
     }
 }
-/// task 3 - calculate the average grade
+/// task 3 - fastest bicycle
+/// task 4 - calculate the average grade
 import java.util.Scanner;
 class Lesson3_Task3 {
     public static void main(String[] args) {
@@ -52,3 +53,4 @@ class Lesson3_Task3 {
         System.out.println(average);
     }
 }
+/// task 5 - 
