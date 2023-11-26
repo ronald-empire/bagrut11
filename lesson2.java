@@ -40,6 +40,19 @@ public class Lesson2_Task2 {
 }
 
 /// task 3 -
+import java.util.Scanner;
+public class Lesson2_Task3 {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("enter a string of 3 characters: ");
+    String str = scanner.nextLine();
+    if (str.charAt(0) == str.charAt(2)) {
+      System.out.println("it's a palindrome");
+    } else {
+      System.out.println("it's NOT a palindrome");
+    }
+  }
+}
 
 /// task 4 -
 
