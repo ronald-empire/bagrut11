@@ -1,4 +1,4 @@
-/// task 1 -
+/// task 1 - is number negative/positive/zero
 import java.util.Scanner;
 class Lesson3_Task1 {
     public static void main(String[] args) {
