@@ -1,47 +1,21 @@
-/// task 1 -
-import java.util.Random;
-public class Lesson2_Task1 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-        int randomNumber = random.nextInt(99);
-        System.out.println(randomNumber);
-        if (randomNumber < 10) {
-            System.out.println("Number is single digit");
-        } 
-        else {
-            System.out.println("Number is double digit");
-        }
-        if (randomNumber % 2 == 0){
-            System.out.println("Number is divisible by two");
-        }
-        else {
-            System.out.println("Number does not divide by two");
-        }
-        if (randomNumber % 3 == 0){
-            System.out.println("Number is divisible by three");
-        }
-        else {
-            System.out.println("Number does not divide by three");
-        }
-    }
-}
+//
 
-/// task 2 -
+/// task 2 - count letters
 import java.util.Scanner;
-public class Lesson2_Task2 {
+public class Lesson4_Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter the sentence: ");
         String sentence = scanner.nextLine();
         int lettercount = sentence.length();
-        System.out.println("The Sentence has " + lettercount + " Letters :)");
+        System.out.println("The Sentence has " + lettercount + " Letters");
+        System.out.println("or " + (lettercount-4) + " without spaces");
     }
 }
 
-/// task 3 -
+/// task 3 - check for palindrome
 import java.util.Scanner;
-public class Lesson2_Task3 {
+public class Lesson4_Task3 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("enter a string of 3 characters: ");
@@ -54,9 +28,9 @@ public class Lesson2_Task3 {
   }
 }
 
-/// task 4 -
+/// task 4 - flip string
 import java.util.Scanner;
-public class Lesson2_Task4 {
+public class Lesson4_Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter a string of 3 characters: ");
@@ -65,9 +39,9 @@ public class Lesson2_Task4 {
     }
 }
 
-/// task 5 -
+/// task 5 - replace vowels
 import java.util.Scanner;
-public class Lesson2_Task5 {
+public class Lesson4_Task5 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.print("enter a string of 4 characters: ");
@@ -92,9 +66,9 @@ public class Lesson2_Task5 {
   }
 }
 
-/// task 6 -
+/// task 6 - digits, divisibility checker
 import java.util.Random;
-public class Lesson2_Task6 {
+public class Lesson4_Task6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -120,3 +94,4 @@ public class Lesson2_Task6 {
         }
     }
 }
+
