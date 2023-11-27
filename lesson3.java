@@ -35,7 +35,7 @@ class Lesson3_Task2 {
             System.out.println("second number is bigger");
         }
         if (num1 == num2) {
-            System.out.println("numbers are equal");
+            System.out.println("these numbers are equal");
         }
     }
 }
