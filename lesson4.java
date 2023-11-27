@@ -1,4 +1,41 @@
-//
+// RONALD GITLIN
+/// task 1 - sort by alphabetical order
+import java.util.Scanner;
+public class task1_ronald {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter the first word: ");
+        String name1 = scanner.nextLine();
+        System.out.print("enter the second word: ");
+        String name2 = scanner.nextLine();
+        System.out.print("enter third word: ");
+        String name3 = scanner.nextLine();
+        if (name1.compareTo(name2) < 0 && name1.compareTo(name3) < 0) {
+            if (name2.compareTo(name3) < 0) {
+                System.out.println(name1 + ", " + name2 + ", " + name3);
+            } 
+            else {
+                System.out.println(name1 + ", " + name3 + ", " + name2);
+            }
+        } 
+        else if (name2.compareTo(name1) < 0 && name2.compareTo(name3) < 0) {
+            if (name1.compareTo(name3) < 0) {
+                System.out.println(name2 + ", " + name1 + ", " + name3);
+            } 
+            else {
+                System.out.println(name2 + ", " + name3 + ", " + name1);
+            }
+        } 
+        else {
+            if (name1.compareTo(name2) < 0) {
+                System.out.println(name3 + ", " + name1 + ", " + name2);
+            } 
+            else {
+                System.out.println(name3 + ", " + name2 + ", " + name1);
+            }
+        }
+    }
+}
 
 /// task 2 - count letters
 import java.util.Scanner;
