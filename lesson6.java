@@ -32,7 +32,7 @@ public class Lesson6Task2 {
     }
 }
 
-/// task 3 - 
+/// task 3 - is the card number correct
 import java.util.Scanner;
 public class Lesson6Task3 {
     //// main function is for testing...
@@ -53,6 +53,28 @@ public class Lesson6Task3 {
         }
         else if (count == 3 && input != cardnum) {
             System.out.print("Error");
+        }
+    }
+}
+
+/// task 4 - check if string is palindrome
+class Lesson6Task4 {
+    public static void main(String[] args) {
+        //// main function is for testing
+        String str = "test put anything here";
+        checkPal(str);
+    }
+    static void checkPal(String input) {
+        String rev = "";
+        for (int i = input.length() - 1; i >= 0; i--) {
+            rev = rev + input.charAt(i);
+        }
+        // Checking if both the strings are equal
+        if (input.equals(rev)) {
+            System.out.print("input is a palindrome");
+        }
+        if (!input.equals(rev)) {
+            System.out.print('"'+input+'"'+" is NOT a palindrome");
         }
     }
 }
