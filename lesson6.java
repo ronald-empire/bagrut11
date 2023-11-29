@@ -33,3 +33,26 @@ public class Lesson6Task2 {
 }
 
 /// task 3 - 
+import java.util.Scanner;
+public class Lesson6Task3 {
+    //// main function is for testing...
+    public static void main(String[] args) {
+        int correct = 4367;
+        checkCard(correct);
+    }
+    static void checkCard(int cardnum) {
+        Scanner scanner = new Scanner(System.in);
+        int input, count = 0;
+        do {
+            System.out.print("enter card number: ");
+            input = scanner.nextInt();
+            count++;
+        } while(input != cardnum && count < 3);
+        if (count <= 3){
+            System.out.print("How much money? ");
+        }
+        else if (count == 3 && input != cardnum) {
+            System.out.print("Error");
+        }
+    }
+}
