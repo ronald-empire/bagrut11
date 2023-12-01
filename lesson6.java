@@ -78,3 +78,44 @@ class Lesson6Task4 {
         }
     }
 }
+
+/// task 5 - dividers of number
+public class Lesson6Task5 {
+    public static void main(String[] args) {
+        int input = -360;
+        printDivisors(input);
+    }
+    static void printDivisors(int number) {
+        System.out.print(number + " can be divided by: ");
+        if (number < 0) {
+            for (int i = 1; i <= number*-1; i++) {
+                if (number % i == 0) {
+                    System.out.print(i);
+                    if (i != number*-1) {
+                        System.out.print(", ");
+                    }
+                }
+            }
+        } else {     
+            for (int i = 1; i <= number; i++) {
+                if (number % i == 0) {
+                    System.out.print(i);
+                    if (i != number) {
+                        System.out.print(", ");
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// task 6 - 
+
+
+/// task 8 - 
+
+
+/// task 9 - 
+
+
+/// task 10 - 
