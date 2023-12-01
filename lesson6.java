@@ -8,7 +8,7 @@ public class Lesson6Task1 {
         int amountGrades = 5, sumGrades = 0;
         for (int index = 1; index <= amountGrades; index++) {
             System.out.print("Your grade: ");
-            int grade = Integer.parseInt(scanner.nextLine());
+            int grade = scanner.nextInt();
             sumGrades += grade;
         }
         double avg = (double) sumGrades / amountGrades;
@@ -96,7 +96,8 @@ public class Lesson6Task5 {
                     }
                 }
             }
-        } else {     
+        } 
+        else {     
             for (int i = 1; i <= number; i++) {
                 if (number % i == 0) {
                     System.out.print(i);
