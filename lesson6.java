@@ -122,7 +122,24 @@ public class Lesson6Task6 {
 }
 
 /// task 7 - 
-
+import java.util.Scanner;
+public class Lesson6Task7 {
+    public static void main(String[] args) {
+        int i, max = 0;
+        Scanner scanner = new Scanner(System.in);
+        for (i = 1; i <= 7; i++) {
+            System.out.print("enter grade " + i + ": ");
+            int grade = scanner.nextInt();
+            if (grade > max) {
+                max = grade;
+            }
+            else {
+                max = max;
+            }
+        }
+        System.out.println("your maximum grade is: " + max);
+    }
+}
 
 /// task 8 - 
 
