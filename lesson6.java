@@ -142,9 +142,56 @@ public class Lesson6Task7 {
 }
 
 /// task 8 - 
-
+public class Lesson6Task8 {
+    public static void main(String[] args) {
+        int input = 55;
+        System.out.println(fibCheck(input));
+    }
+    static boolean fibCheck(int num) {
+        if (num < 0) {
+            return false;
+        }
+        int a = 0, b = 1;
+        while (a <= b) {
+            if (a == num) {
+                return true;
+            }
+            int temp = a + b;
+            a = b;
+            b = temp;
+        }
+        return false;
+    }
+}
 
 /// task 9 - 
-
+public class Lesson6Task9 {
+    public static void main(String[] args) {
+        int num1 = 4;
+        int num2 = 3;
+        mulTwo(num1, num2);
+    } //// ^ numbers for testing ^
+    static void mulTwo(int n1, int n2) {
+        int ans = 0;
+        for (int i = 1; i <= n2; i++) {
+            ans = ans + n1;
+        }
+        System.out.println(ans);
+    }
+}
 
 /// task 10 - 
+public class Lesson6Task10 {
+    public static void main(String[] args) {
+        int input = 8;
+        printTriangle(input);
+    }
+    static void printTriangle(int height) {
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print('*');
+            }
+            System.out.println();
+        }
+    }
+}
